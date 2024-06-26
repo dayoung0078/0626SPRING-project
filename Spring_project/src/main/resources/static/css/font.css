@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'BMJUA';
+  src: url('../font/BMJUA_ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMHANNA';
+  src: url('../font/BMHANNA_otf.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GenAI102';
+  src: url('../font/GenAI102.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GenAR102';
+  src: url('../font/GenAR102.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GenI102';
+  src: url('../font/GenI102.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GenR102';
+  src: url('../font/GenR102.TTF ') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

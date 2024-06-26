@@ -1,0 +1,68 @@
+.index_back_img {
+    background-image: url(../img/mainBG.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.index_search_box {
+    position: absolute;
+    bottom: 206px;
+    width: 100%;
+    text-align: center;
+}
+
+.Df_JC {
+    display: flex;
+    justify-content: center;
+}
+
+.enter_btn {
+    width: 288px;
+    height: 70px;
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7043B8;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.enter_btn a {
+    font-family: 'BMJUA';
+    letter-spacing: 4px;
+    color: white;
+}
+
+.movie_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.movie_search p {
+    font-size: 35px;
+    margin-right: 10px;
+    color: #895C87;
+    font-family: 'BMJUA';
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.movie_search input {
+    width: 212px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #895C87;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+}

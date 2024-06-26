@@ -1,0 +1,69 @@
+.overflow-hidden_Lee {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.poster_All_Box {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 80px 0;
+  width: 100%;
+}
+
+.poster_All_Box>div {
+  width: 210px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.detail_Text {
+  font-size: 15px;
+  width: 100%;
+  width: 210px;
+  margin-top: 15px;
+}
+
+.poster_Sub_Box {
+  width: 100%;
+  height: 270px;
+}
+
+.Back_img_poster {
+  background-image: url(../img/362217a5a1e2a040687b12b2d212de0f.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Back_img_poster>div {
+  padding: 10px;
+}
+
+.Back_img_poster_Border {
+  border: 1px solid #ADADAD;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.Data_day_Box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.font10 {
+  font-size: 10px;
+}
+
+.font13 {
+  font-size: 13px;
+}
+
+.W16H16 {
+  width: 16px;
+  height: 16px;
+}
