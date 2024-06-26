@@ -9,10 +9,11 @@
 
 .index_search_box {
     position: absolute;
-    bottom: 206px;
+    bottom: 150px;
     width: 100%;
     text-align: center;
 }
+
 
 .Df_JC {
     display: flex;
@@ -20,16 +21,16 @@
 }
 
 .enter_btn {
-    width: 288px;
+    width: 220px;
     height: 70px;
     font-size: 40px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #7043B8;
     border-radius: 15px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .enter_btn a {
@@ -61,8 +62,13 @@
     border: 1px solid #895C87;
     border-radius: 10px;
 }
-
+input[type=password],
 input[type=text] {
     padding: 0 0 0 10px;
     font-size: 20px;
+}
+
+
+.password{
+    font-size: 40px;
 }

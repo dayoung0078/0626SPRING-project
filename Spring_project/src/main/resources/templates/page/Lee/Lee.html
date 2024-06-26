@@ -11,47 +11,7 @@
 </head>
 
 <body class="bodyBack_Lee">
-  <header class="header_Lee">
-    <nav class="header_nav_Lee ">
-      <ul>
-        <li>
-          <a href="">
-            애니메이션
-          </a>
-        </li>
-        <li>
-          <a href="">
-            해외영화
-          </a>
-        </li>
-        <li>
-          <a href="">
-            한국영화
-          </a>
-        </li>
-        <li>
-          <a href="">
-            과학영화
-          </a>
-        </li>
-        <li>
-          <a href="">
-            게임영화
-          </a>
-        </li>
-        <li>
-          <a href="">
-            아이원영화
-          </a>
-        </li>
-        <li>
-          <a href="">
-            아카데미영화
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div th:replace="header/header :: header"></div>
   <section class=" section_Lee">
     <div class="W100_Lee">
       <div class="W100_Lee">
@@ -64,7 +24,7 @@
         <div class="section_Data_box_Lee Df_JB DF_AC">
           <div class="Df_JB DF_AC W100_Lee">
             <div class="Df DF_AC">
-              <img src="../../../static/img/character.svg" alt="" class="W24H24">
+              <img th:src="@{/img/character.svg}" alt="" class="W24H24">
               <p class="ml10_Color mt4_3">애니오타쿠</p>
               <p class="ml10_Color">2024-06-20</p>
             </div>
@@ -82,6 +42,9 @@
     <!-- 영화 소개 -->
   </section>
   <footer>
+    <div style="width: 100%; text-align: center;">
+      <a th:href="@{/page/subpage}">처음으로</a>
+    </div>
   </footer>
 </body>
 

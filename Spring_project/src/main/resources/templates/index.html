@@ -7,21 +7,29 @@
     <link rel="stylesheet" th:href="@{/css/font.css}">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
     <link rel="stylesheet" th:href="@{/css/index.css}">
+    <script th:src="@{/js/login.js}"></script>
 </head>
 
 <body>
 <div class="index_back_img">
     <div class="index_search_box">
+        <form>
+            <div class="movie_search ">
+                <input type="text" oninput="handleOnInput(this)" placeholder="ID : 우승엽 바보 아이디 ">
+            </div>
+            <div class="movie_search password" >
+                <input type="password" placeholder="PW : 송재희 빨리해라">
+            </div>
+        </form>
         <div class=" Df_JC">
             <div class="enter_btn">
-                <a th:href="@{/page/subpage}"   >
-                    <p>영화보러가기</p>
+                <a th:href="@{/page/subpage}">
+                    <p>로그인 하기</p>
                 </a>
             </div>
         </div>
-        <div class="movie_search">
-            <input type="text" placeholder="우승엽 바보">
-            <p>검색</p>
+        <div style="margin-top: 10px">
+            <a href="#">회원가입</a>
         </div>
     </div>
 </div>

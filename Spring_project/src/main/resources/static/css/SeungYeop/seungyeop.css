@@ -1,0 +1,182 @@
+.movie {
+    padding: 15px;
+}
+
+.movie_div {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.header {
+    border-bottom: 1px solid #895c87;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header_border {
+    border-left: 5px solid #895c87;
+    padding-left: 10px;
+}
+
+.header_demon01 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header_demon02 {
+    font-size: 18px;
+    color: #555;
+}
+
+.body_img_box {
+    text-align: center;
+    margin: 20px;
+}
+
+.body_img_demon {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
+}
+
+.footer {
+    border-top: 1px solid #895c87;
+    padding: 15px 0 0 10px;
+    margin-top: 10px;
+}
+.footer_summary06 a {
+    margin: 5px;
+    font-size: 20px;
+}
+.footer_summary p {
+    margin: 5px;
+    font-size: 20px;
+}
+.footer_summary02 {
+    display: flex;
+}
+.footer_summary03 {
+    display: flex;
+}
+.footer_summary04 {
+    display: flex;
+    align-items: center;
+}
+.footer_summary05 {
+    display: flex;
+}
+.footer_summary06 {
+    display: flex;
+    border-bottom: 1px solid #895c87;
+    padding-bottom: 5px;
+}
+
+/* 별 모양 css*/
+.pentagram {
+    display: flex;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    color: red;
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+    border-bottom: 9px solid red;
+    transform: rotate(35deg);
+}
+
+.pentagram::before,
+.pentagram::after {
+    content: "";
+    position: absolute;
+    color: red;
+    left: -13px;
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+    border-bottom: 9px solid red;
+}
+
+.pentagram::before {
+    transform: rotate(71deg);
+}
+
+.pentagram::after {
+    transform: rotate(-71deg);
+}
+/* 별 모양 css*/
+
+
+/* 아코디언 css */
+*{
+    box-sizing: border-box;
+}
+
+.que:first-child{
+    border-top: 1px solid black;
+}
+
+.que{
+    font-family: 'BMJUA';
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid ;
+
+}
+
+.que::before{
+    display: inline-block;
+    content: '영화 리뷰 - ';
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.que.on>span{
+    font-weight: bold;
+}
+
+.anw {
+
+    font-family: 'BMJUA';
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    font-size: 14px;
+
+}
+
+.anw::before {
+    padding: 15px;
+    display: inline-block;
+    content: '';
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 5px;
+}
+
+.arrow-wrap {
+    position: absolute;
+    top:50%; right: 10px;
+    transform: translate(0, -50%);
+}
+
+.que .arrow-top {
+    display: none;
+}
+.que .arrow-bottom {
+    display: block;
+}
+.que.on .arrow-bottom {
+    display: none;
+}
+.que.on .arrow-top {
+    display: block;
+}
+/* 아코디언 css */
+
+.anw_p{
+    padding-bottom: 10px;
+}
