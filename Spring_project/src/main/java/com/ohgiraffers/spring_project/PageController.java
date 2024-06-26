@@ -9,8 +9,14 @@ public class PageController {
     public String leePageRedirect() {
         return "page/Lee/Lee";
     }
+
     @GetMapping("/seungYeopPage")
     public String seungYeopPageRedirect() {
         return "page/seungYeop/SeungYeop";
+    }
+
+    @GetMapping("/Elemental")
+    public String ElementalRedirect(){
+        return "page/seungYeop/Elemental";
     }
 }

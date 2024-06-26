@@ -2,12 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const posterData = {
         SeungYeop: [
             {
-                imageUrl: "/img/362217a5a1e2a040687b12b2d212de0f.jpg",
+                imageUrl: "/img/seungYeop/demon.jpg",
                 title: "우승엽 페이지",
                 date: "2025.05.05",
                 views: 272829,
                 vlue:"SeungYeop"
             },
+            // {
+            //     imageUrl: "/img/seungYeop/Elemental.jpg",
+            //     title: "우승엽 페이지 2",
+            //     date: "2025.06.06",
+            //     views: 303132,
+            //     vlue:"Elemental"
+            // },
             {imageUrl: "path_to_animation2.jpg", title: "우승엽 페이지 2", date: "2025.06.06", views: 303132,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation3.jpg", title: "우승엽 페이지 3", date: "2025.07.07", views: 333435,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation4.jpg", title: "우승엽 페이지 4", date: "2025.08.08", views: 363738,vlue:"SeungYeop"}
@@ -114,6 +121,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 case 'SeungYeop':
                     window.location.href = '/seungYeopPage';
                     break;
+                case 'Elemental':
+                    window.location.href = '/Elemental';
+                    break;
                 case 'DaYoung':
                     window.location.href = '/daYoungPage';
                     break;
@@ -146,12 +156,38 @@ document.addEventListener('DOMContentLoaded', function () {
         MinJoo: "url('path_to_academy_background.jpg')"
     };
     // 각각의 백그라운드 이미지 저장 공간
+    // function createPosterBox(data) {
+    //     const posterBox = document.createElement('div');
+    //     posterBox.className = 'poster_Box';
+    //     posterBox.innerHTML = `
+    //     <div class="poster_Sub_Box">
+    //         <div class="Back_img_poster" style="background-image: url('${data.imageUrl}');">
+    //             <div>
+    //                 <div class="Back_img_poster_Border"></div>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     <p class="detail_Text">${data.title}</p>
+    //     <div class="Data_day_Box">
+    //         <div>
+    //             <p class="font10">${data.date}</p>
+    //         </div>
+    //         <div class="Df Df_AC">
+    //             <img src="/img/comment.svg" alt="" class="W16H16">
+    //             <p class="font13">${data.views}</p>
+    //         </div>
+    //     </div>
+    // `;
+    //     addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
+    //     return posterBox;
+    // }
+
     function createPosterBox(data) {
         const posterBox = document.createElement('div');
-        posterBox.className = 'poster_Box';
+        posterBox.className = 'body';
         posterBox.innerHTML = `
-        <div class="poster_Sub_Box">
-            <div class="Back_img_poster" style="background-image: url('${data.imageUrl}');">
+        <div class="body_img_box">
+            <div class="body_img_demon" style="Back_img_poster_Border: url('${data.imageUrl}');">
                 <div>
                     <div class="Back_img_poster_Border"></div>
                 </div>
@@ -171,6 +207,92 @@ document.addEventListener('DOMContentLoaded', function () {
         addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
         return posterBox;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     function updateFirstPosterContainer(data) {
         firstContainer.innerHTML = '';
