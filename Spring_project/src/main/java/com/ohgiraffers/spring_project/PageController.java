@@ -19,4 +19,7 @@ public class PageController {
     public String ElementalRedirect(){
         return "page/seungYeop/Elemental";
     }
+
+    @GetMapping("/minJooPage")
+    public String minJooPageRedirect(){return "page/MinJoo/MinJoo";}
 }

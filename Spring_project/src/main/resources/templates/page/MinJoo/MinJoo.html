@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/font.css}">
+    <link rel="stylesheet" th:href="@{/css/subPageAll.css}">
+    <link rel="stylesheet" th:href="@{/css/MinJoo/minjoo.css}">
+</head>
+
+<body class="bodyBack_Lee">
+<div th:replace="header/header :: header"></div>
+<section class=" section_Lee">
+    <div class="W100_Lee">
+        <div class="W100_Lee">
+            <div>
+                <p class="section_subTite_header_Lee ">코딩공부 리뷰</p>
+            </div>
+            <div class="section_subTite_Lee">
+                <p>코실의 코딩공부 리뷰</p>
+            </div>
+            <div class="section_Data_box_Lee Df_JB DF_AC">
+                <div class="Df_JB DF_AC W100_Lee">
+                    <div class="Df DF_AC">
+                        <img th:src="@{/img/character.svg}" alt="" class="W24H24">
+                        <p class="ml10_Color mt4_3">코실</p>
+                        <p class="ml10_Color">2024-06-26</p>
+                    </div>
+                    <div class="Color">
+                        <a href="">돌아가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 영화 소개  -->
+    <div>
+        <bodym>
+            <main>
+                <article>
+                    <h2>이곳에 알려줄 코드 제목</h2>
+                    <p>이곳은 알려줄 코드의 내용이 들어가용</p>
+                    <pre><code class="language-java">
+public class StudyCode {
+    public static void main(String[] args) {
+        System.out.println("코드로 보여주기");
+    }
+}
+            </code></pre>
+                </article>
+                <article>
+                    <h2>위와 비교할 코드</h2>
+                    <p>그 코드의 내용</p>
+                    <pre><code class="language-python">
+
+console.log("코드쓰는 곳")
+            </code></pre>
+                </article>
+            </main>
+        </bodym>
+    </div>
+    <!-- 영화 소개 -->
+</section>
+<footer>
+    <div class="go_sub" style="width: 100%; text-align: center;">
+        <a th:href="@{/page/subpage}">처음으로</a>
+    </div>
+</footer>
+</body>
+</html>
