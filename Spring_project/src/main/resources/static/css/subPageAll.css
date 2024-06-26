@@ -39,7 +39,7 @@
     width: 100%;
 }
 
-.section_subTite_header_Lee {
+.section_subTitle_header_Lee {
     color: #818181;
     font-size: 20px;
     text-align: center;
@@ -48,12 +48,12 @@
 }
 
 
-.section_subTite_Lee {
+.section_subTitle_Lee {
     margin-top: 33px;
     text-align: center;
 }
 
-.section_subTite_Lee p {
+.section_subTitle_Lee p {
     font-size: 30px;
     font-family: 'GenAR102';
     font-weight: 700;
