@@ -9,6 +9,7 @@
     <link rel="stylesheet" th:href="@{/css/font.css}">
     <link rel="stylesheet" th:href="@{/css/subPageAll.css}">
     <link rel="stylesheet" th:href="@{/css/MinJoo/minjoo.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="bodyBack_Lee">
@@ -41,26 +42,78 @@
         <bodym>
             <main>
                 <article>
-                    <h2>이곳에 알려줄 코드 제목</h2>
-                    <p>이곳은 알려줄 코드의 내용이 들어가용</p>
-                    <pre><code class="language-java">
-public class StudyCode {
-    public static void main(String[] args) {
-        System.out.println("코드로 보여주기");
-    }
-}
+                    <h2 class="ti">Github에 branch 완벽이해</h2>
+                    <img class="bran" th:src="@{/img/MinJoo/branch.png}">
+                    <p>branch는 우리가 서비스하는 프로그램의 버전관리를 위해 이용하는 것인데
+                        위에 사진으로도 사용이유가 이해가지않는다면 구글링하여 열심히 공부하자!
+                    아니면 밑에 <c>git링크</c>를 읽어보자</p>
+                    <a th:href="@{https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80}" style="color: saddlebrown;">branch란 무엇인가</a>
+                    <p>feature 브랜치 생성하는 명령어</p>
+                    <pre><code>
+git branch feature
             </code></pre>
                 </article>
                 <article>
-                    <h2>위와 비교할 코드</h2>
-                    <p>그 코드의 내용</p>
-                    <pre><code class="language-python">
-
-console.log("코드쓰는 곳")
+                    <p>지금 위치한 브랜치를 feature 브랜치로 바꾸는 명령어</p>
+                    <pre><code>
+git checkout feature
             </code></pre>
+                </article>
+                <article>
+                    <p>모든 브랜치 목록 확인하는 명령어</p>
+                    <pre><code>
+git branch
+            </code></pre>
+                </article>
+                <article>
+                    <p>feature 브랜치 삭제하는 명령어</p>
+                    <pre><code>
+git branch -d feature
+            </code></pre>
+                </article>
+                <article>
+                    <p>feature 브랜치 생성과 동시에 feature 브랜치로 전환하는 명령어</p>
+                    <pre><code>
+git checkout -b feature
+            </code></pre>
+                </article>
+                <article>
+                    <p>feature 브랜치를 main(master) 브랜치에 합치는 명령어</p>
+                    <pre><code>
+git merge feature
+            </code></pre>
+                </article>
+                <article>
+                    <p>commit한 걸 feature 브랜치에 push하는 명령어</p>
+                    <pre><code>
+git push origin feature
+            </code></pre>
+                    <p>다 봤으면 바로 git을 켜서 실행해보자!!!</p>
                 </article>
             </main>
         </bodym>
+        <div class="f">
+            <div id="Accordion_wrap">
+                <div class="que">
+                    <span>안녕하세요 코드 도둑입니다.</span>
+                    <div class="arrow-wrap"></div>
+                </div>
+                <div class="anw">
+                    <p>이제 이 코드는 제 것입니다.</p>
+                    <p>마음대로 할 수 있는겁니다.</p>
+
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $(".que").click(function() {
+                        $(this).next(".anw").stop().slideToggle(500);
+                        $(this).toggleClass('on').siblings().removeClass('on');
+                        $(this).next(".anw").siblings(".anw").slideUp(300); // Only one panel open at a time
+                    });
+                });
+            </script>
+        </div>
     </div>
     <!-- 영화 소개 -->
 </section>

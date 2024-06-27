@@ -12,7 +12,7 @@ public class PageController {
 
     @GetMapping("/seungYeopPage")
     public String seungYeopPageRedirect() {
-        return "page/seungYeop/SeungYeop";
+        return "page/SeungYeop/SeungYeop";
     }
 
     @GetMapping("/Elemental")
