@@ -22,4 +22,8 @@ public class PageController {
 
     @GetMapping("/minJooPage")
     public String minJooPageRedirect(){return "page/MinJoo/MinJoo";}
+
+    @GetMapping("/hyoJooPage")
+    public String hyoJooPageRedirect() {return "page/HyoJu/HyoJu";}
+
 }
