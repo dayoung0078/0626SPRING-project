@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bodyElement = document.querySelector('.bodyBack_Lee');
 
 
-    function addPosterClickEvent(posterElement, data) { 
+    function addPosterClickEvent(posterElement, data) {
         posterElement.addEventListener('click', function () {
             window.location.href = `/navigate?title=${encodeURIComponent(data.title)}`;
         });
