@@ -10,52 +10,8 @@ import java.util.Map;
 
 @Controller
 public class PageController {
-    // @GetMapping("/seungYeopPage")
-    // public String seungYeopPageRedirect() {
-    // return "page/SeungYeop/SeungYeop";
-    // }
-    //
-    // @GetMapping("/seungYeopPage2")
-    // public String seungYeopPage2Redirect() {
-    // return "page/SeungYeop/SeungYeop2";
-    // }
-    //
-    // @GetMapping("/seungYeopPage3")
-    // public String seungYeopPage3Redirect() {
-    // return "page/SeungYeop/SeungYeop3";
-    // }
-    //
-    // @GetMapping("/daYoungPage")
-    // public String daYoungPageRedirect() {
-    // return "page/Dayoung/MainDayoung";
-    // }
-    //
-    // @GetMapping("/hyoJooPage")
-    // public String hyoJooPageRedirect() {
-    // return "page/HyoJu/HyoJu";
-    // }
-    //
-    // @GetMapping("/jaeHeePage")
-    // public String jaeHeePageRedirect() {
-    // return "page/jaeHeePage/jaeHeePage";
-    // }
-    //
-    // @GetMapping("/haYoungPage")
-    // public String haYoungPageRedirect() {
-    // return "page/HaYoung/HaYoung";
-    // }
-    //
-    // @GetMapping("/eunSeokPage")
-    // public String eunSeokPageRedirect() {
-    // return "page/EunSeok/EunSeok";
-    // }
-    //
-    // @GetMapping("/minJooPage")
-    // public String minJooPageRedirect() {
-    // return "page/MinJoo/MinJoo";
-    // }
 
-    @GetMapping("/seungYeopPage{pageNumber}")
+    @GetMapping("/blog/seungYeopPage{pageNumber}")
     public String seungYeopPageRedirect(@PathVariable int pageNumber, Model model) {
         model.addAttribute("movie", getMovieData(pageNumber));
         return "page/SeungYeop/SeungYeop";

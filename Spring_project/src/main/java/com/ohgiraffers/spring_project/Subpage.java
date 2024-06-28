@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/page")
+@RequestMapping("/")
 public class Subpage {
 
-        @GetMapping("/subpage")
+        @GetMapping("/")
         public String subPage() {
             return "page/subpage";
         }

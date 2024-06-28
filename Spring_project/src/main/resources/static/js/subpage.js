@@ -8,13 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 views: 272829,
                 vlue:"SeungYeop"
             },
-            // {
-            //     imageUrl: "/img/seungYeop/Elemental.jpg",
-            //     title: "우승엽 페이지 2",
-            //     date: "2025.06.06",
-            //     views: 303132,
-            //     vlue:"Elemental"
-            // },
+
             {imageUrl: "path_to_animation2.jpg", title: "우승엽 페이지 2", date: "2025.06.06", views: 303132,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation3.jpg", title: "우승엽 페이지 3", date: "2025.07.07", views: 333435,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation4.jpg", title: "우승엽 페이지 4", date: "2025.08.08", views: 363738,vlue:"SeungYeop"}
@@ -119,39 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
-    // function addPosterClickEvent(posterElement, data) {
-    //     posterElement.addEventListener('click', function () {
-    //         switch (data.vlue) {
-    //             case 'EunSeok':
-    //                 window.location.href = '/leePage';
-    //                 break;
-    //             case 'SeungYeop':
-    //                 window.location.href = '/seungYeopPage';
-    //                 break;
-    //             case 'Elemental':
-    //                 window.location.href = '/Elemental';
-    //                 break;
-    //             case 'DaYoung':
-    //                 window.location.href = '/daYoungPage';
-    //                 break;
-    //             case 'HyoJoo':
-    //                 window.location.href = '/hyoJooPage';
-    //                 break;
-    //             case 'JaeHee':
-    //                 window.location.href = '/jaeHeePage';
-    //                 break;
-    //             case 'HaYoung':
-    //                 window.location.href = '/haYoungPage';
-    //                 break;
-    //             case 'MinJoo':
-    //                 window.location.href = '/minJooPage';
-    //                 break;
-    //             default:
-    //                 console.log('Unknown vlue:', data.vlue);
-    //         }
-    //     });
-    // }
 
     // 각각의 백그라운드 이미지 저장 공간
     const backgroundImages = {
