@@ -29,6 +29,7 @@ body {
     font-size: 58px;
     color: black;
     margin-top: 50px;
+    align-items: center;
 
 }
 .container {
@@ -71,6 +72,7 @@ h1 {
 
 p {
     font-size: 28px;
+    margin-right: 80px;
 
 
 }

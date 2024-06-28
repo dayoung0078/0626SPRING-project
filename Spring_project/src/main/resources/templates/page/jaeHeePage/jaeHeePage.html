@@ -39,14 +39,15 @@
     </div>
 
     <div class="jh">
-        <p class="susub" th:text="${movie.title}"></p>
+        <p class="susub" align="center" th:text="${movie.title}"></p>
 
         <div class="header">
             <div class="container">
                 <img class="test2" th:src="${movie.imageUrl}">
 
                 <div class="text">
-                    <h1 th:text="${movie.title}"></h1>
+                    <div class="padd">
+                    <h1 th:text="${movie.sub_title}"></h1>
                     <p th:text="${movie.release_date}"></p>
                     <p th:text="${movie.running_time}"></p>
                     <p th:text="${movie.age}"></p>
@@ -59,7 +60,7 @@
 
                 <p th:text="${movie.description}"></p>
             </div>
-
+        </div>
             <div class="container2">
                 <div class="styled-div">
                     <h1 class="box1">순위 누적 관객수</h1>

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			<div class="text">
 				
-				<h1>${jh.title}</h1>
+				<h1>${jh.sub_title}</h1>
                                		
 				<p>${jh.release_date}</p>
 
