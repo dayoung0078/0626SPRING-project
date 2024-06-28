@@ -118,6 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = `/navigate?title=${encodeURIComponent(data.title)}`;
         });
     }
+
+
     // function addPosterClickEvent(posterElement, data) {
     //     posterElement.addEventListener('click', function () {
     //         switch (data.vlue) {
@@ -226,7 +228,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-//테스트 버전
 

@@ -55,47 +55,45 @@ public class PageController {
     // return "page/MinJoo/MinJoo";
     // }
 
-
     @GetMapping("/seungYeopPage{pageNumber}")
     public String seungYeopPageRedirect(@PathVariable int pageNumber, Model model) {
         model.addAttribute("movie", getMovieData(pageNumber));
         return "page/SeungYeop/SeungYeop";
     }
 
-<<<<<<< HEAD
-    @GetMapping("/daYoungPage")
-    public String daYoungPageRedirect() {
+    @GetMapping("/daYoungPage{pageNumber}")
+    public String daYoungPageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getDaYoungMovieData(pageNumber));
         return "page/Dayoung/MainDayoung";
-=======
-    @GetMapping("/seungYeopPage")
-    public String seungYeopPageRedirect() {
-        return "page/SeungYeop/SeungYeop";
->>>>>>> 80da34fd7dea22bc406b8f712bc95686c848b1d7
     }
 
-    @GetMapping("/hyoJooPage")
-    public String hyoJooPageRedirect() {
+    @GetMapping("/hyoJooPage{pageNumber}")
+    public String hyoJooPageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getHyoJooMovieData(pageNumber));
         return "page/HyoJu/HyoJu";
     }
 
-    @GetMapping("/jaeHeePage")
-    public String jaeHeePageRedirect() {
+    @GetMapping("/jaeHeePage{pageNumber}")
+    public String jaeHeePageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getJaeHeeMovieData(pageNumber));
         return "page/jaeHeePage/jaeHeePage";
     }
 
-    @GetMapping("/haYoungPage")
-    public String haYoungPageRedirect() {
+    @GetMapping("/haYoungPage{pageNumber}")
+    public String haYoungPageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getHaYoungMovieData(pageNumber));
         return "page/HaYoung/HaYoung";
     }
 
-    @GetMapping("/eunSeokPage")
-    public String eunSeokPageRedirect() {
-        return "page/EunSeok/EunSeok";
+    @GetMapping("/eunSeokPage{pageNumber}")
+    public String eunSeokPageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getEunSeokMovieData(pageNumber));
+        return "page/Lee/Lee";
     }
 
-    @GetMapping("/minJooPage")
-<<<<<<< HEAD
-    public String minJooPageRedirect() {
+    @GetMapping("/minJooPage{pageNumber}")
+    public String minJooPageRedirect(@PathVariable int pageNumber, Model model) {
+        model.addAttribute("movie", getMinJooMovieData(pageNumber));
         return "page/MinJoo/MinJoo";
     }
 
@@ -242,19 +240,19 @@ public class PageController {
         return movieData;
     }
 
-
-    private Map<String, String> getMovieData2(int pageNumber) {
+    private Map<String, String> getJaeHeeMovieData(int pageNumber) {
         Map<String, String> movieData = new HashMap<>();
         switch (pageNumber) {
             case 1:
                 movieData.put("title", "영화 '하이재킹'의 역사적 배경: 1971년 대한항공 납북사건");
                 movieData.put("sub_title", "하이재킹");
-                movieData.put("image", "/img/songimg/hija.png");
+                movieData.put("imageUrl", "/img/songimg/hija.png");
                 movieData.put("release_date", "2024.06.21 개봉");
                 movieData.put("running_time", "100분");
                 movieData.put("age", "12세이상관람가");
                 movieData.put("people", "49.3만명");
-                movieData.put("description", "1971년 겨울 속초공항여객기 조종사 태인(하정우)과 규식(성동일)은\n김포행 비행에 나선다. 승무원 옥순(채수빈)의 안내에 따라\n탑승 중인 승객들의 분주함도 잠시, 이륙한지 얼마 되지 않아\n사제폭탄이 터지며 기내는 아수라장이 된다.");
+                movieData.put("description",
+                        "1971년 겨울 속초공항여객기 조종사 태인(하정우)과 규식(성동일)은\n김포행 비행에 나선다. 승무원 옥순(채수빈)의 안내에 따라\n탑승 중인 승객들의 분주함도 잠시, 이륙한지 얼마 되지 않아\n사제폭탄이 터지며 기내는 아수라장이 된다.");
                 movieData.put("audience", "3위/70만명");
                 movieData.put("audience_like", "8.15");
                 movieData.put("netizen_like", "8.75");
@@ -264,97 +262,7 @@ public class PageController {
             case 2:
                 movieData.put("title", "영화 간략 표기 2");
                 movieData.put("sub_title", "영화 제목 2");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 3:
-                movieData.put("title", "영화 간략 표기 3");
-                movieData.put("sub_title", "영화 제목 3");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 4:
-                movieData.put("title", "영화 간략 표기 4");
-                movieData.put("sub_title", "영화 제목 4");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 5:
-                movieData.put("title", "영화 간략 표기 5");
-                movieData.put("sub_title", "영화 제목 5");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 6:
-                movieData.put("title", "영화 간략 표기 6");
-                movieData.put("sub_title", "영화 제목 6");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 7:
-                movieData.put("title", "영화 간략 표기 7");
-                movieData.put("sub_title", "영화 제목 7");
-                movieData.put("image", "/img/songimg/이미지이름");
-                movieData.put("release_date", "yyyy.mm.dd 개봉");
-                movieData.put("running_time", "%d분");
-                movieData.put("age", "%d세이상관람가");
-                movieData.put("people", "%d만명");
-                movieData.put("description", "영화 줄거리");
-                movieData.put("audience", "%d위/%d만명");
-                movieData.put("audience_like", "평점");
-                movieData.put("netizen_like", "평점");
-                movieData.put("now_date", "yyyy-mm-dd");
-                movieData.put("youtube_link", "예고편 유튜브 링크");
-                break;
-            case 8:
-                movieData.put("title", "영화 간략 표기 8");
-                movieData.put("sub_title", "영화 제목 8");
-                movieData.put("image", "/img/songimg/이미지이름");
+                movieData.put("imageUrl", "/img/songimg/이미지이름");
                 movieData.put("release_date", "yyyy.mm.dd 개봉");
                 movieData.put("running_time", "%d분");
                 movieData.put("age", "%d세이상관람가");
@@ -370,12 +278,34 @@ public class PageController {
         }
         return movieData;
     }
-}
-=======
-    public String minJooPageRedirect(){return "page/MinJoo/MinJoo";}
 
-    @GetMapping("/hyoJooPage")
-    public String hyoJooPageRedirect() {return "page/HyoJu/HyoJu";}
+    private Map<String, String> getDaYoungMovieData(int pageNumber) {
+        Map<String, String> movieData = new HashMap<>();
+        // Add movie data based on pageNumber
+        return movieData;
+    }
+
+    private Map<String, String> getHyoJooMovieData(int pageNumber) {
+        Map<String, String> movieData = new HashMap<>();
+        // Add movie data based on pageNumber
+        return movieData;
+    }
+    private Map<String, String> getHaYoungMovieData(int pageNumber) {
+        Map<String, String> movieData = new HashMap<>();
+        // Add movie data based on pageNumber
+        return movieData;
+    }
+
+    private Map<String, String> getEunSeokMovieData(int pageNumber) {
+        Map<String, String> movieData = new HashMap<>();
+        // Add movie data based on pageNumber
+        return movieData;
+    }
+
+    private Map<String, String> getMinJooMovieData(int pageNumber) {
+        Map<String, String> movieData = new HashMap<>();
+        // Add movie data based on pageNumber
+        return movieData;
+    }
 
 }
->>>>>>> 80da34fd7dea22bc406b8f712bc95686c848b1d7
