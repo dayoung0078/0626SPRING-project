@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/* 타이틀 */
+.main-tit {
+    font-family: "NanumPen";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: #484848;
+    margin: 50px;
+}
+
+.sub-tit {
+    font-family: "BMHANNAPro";
+    font-style: normal;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    color: #bb0303;
+}
+
+/* 메인 이미지 */
+.main-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-info {
+
+    font-family: 'BMHANNA_11';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #a90000;
+}
+.part-box p{
+    text-indent: 16px;
+}
+/* 그룹 타이틀 */
+.button-style {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    text-align: center;
+}
+.btn {
+    background-color: #cf9e9e;
+    padding: 0.5rem 0.5rem;
+    border: 0;
+    color: #4e0606;
+    font-family: "MaruBuri";
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* 타이틀 오버 시 배경색 */
+button:hover {
+    background-color: hsl(0, 100%, 34%);
+    color: #ffffff;
+}
+
+/* 배우 */
+.actor-style {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    border: 0px;
+    border-radius: 9px;
+    background-color: #ffe6e6;
+    margin: 2px;
+    padding: 6px;
+    height: 230px;
+}
+
+.actor-name {
+    font-family: "MaruBuri";
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #b84343;
+    margin-bottom: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.actor-detail {
+    width: 360px;
+    height: 150px;
+    font-family: "MaruBuri";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 40px;
+    text-align: center;
+    color: #696969;
+}
+
+/* 이미지 두장 */
+.img-group-DY {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.hover-img-DY {
+    flex:1;
+}
+.hover-img-DY img {
+    width: 100%;
+    border-radius: 20px;
+}
+.hover-img-DY:hover .box-wrap {
+    opacity: 1;
+}
+
+/*사진 위 글씨*/
+.box-wrap {
+    position: absolute;
+    width: 50%;
+    bottom: 6px;
+    color: #f18a8a;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0 20px;
+    line-height: 2;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 70%, transparent);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* 줄글 공통 */
+.story-text {
+    font-family: "MaruBuri";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 45px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 50px 0;
+    color: #565656;
+}
+/* 명대사 구역 */
+.best-bg {
+    height: 250px;
+    padding: 30px 60px;
+    background: #b84343;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+}
+/* 명대사 왼쪽 라인 */
+.line-DY{
+    width: 6px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.best-ment {
+    width: 950px;
+    height: 200px;
+    font-family: "NanumGothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+/* 리뷰 상단 */
+.review-big {
+    width: auto;
+    font-family: "MaruBuri";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 34px;
+    text-align: center;
+    color: #b84343;
+}

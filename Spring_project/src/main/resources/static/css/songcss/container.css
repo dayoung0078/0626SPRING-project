@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('../../font/BMJUA_ttf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GenAI102';
+    src: url('../../font/GenAI102.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GenAR102';
+    src: url('../../font/GenAR102.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.susub{
+    font-family: 'BMJUA';
+    font-size: 58px;
+    color: black;
+    margin-top: 50px;
+
+}
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+.test2{
+    margin-left: 80px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
+    margin-top: 30px;
+    width: 450px;
+    height: 515px;
+}
+.image {
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-left : 200px;
+    margin-right: 10px; /* 간격을 더 넓혔습니다 */
+    margin-top: 130px;
+
+    width: 100px;
+    height: 200px; /* 원하는 크기로 조정하세요 */
+}
+
+
+
+.text {
+    margin-left: 50px;
+    max-width: 1000px;
+    font-family: 'BMJUA';}
+
+h1 {
+    font-size: 40px;
+    margin-top: 46px;
+    margin-bottom: 30px;
+    font-family: 'BMJUA';}
+
+p {
+    font-size: 28px;
+
+
+}
+
+button {
+    font-size: 24px;
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: mediumpurple;
+}
+.test{
+    width: 170px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*.tell2{*/
+/*    margin-top: 100px;*/
+/*    margin-left: 400px;*/
+/*    width: 500px;*/
+/*    height: 150px;*/
+
+/*}*/
+.fff{
+    font-size : 52px;
+    color : #895c87;
+    text-align: center;
+}
+.square{
+    font-size: 24px;
+    color:white !important;
+    display: block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.square1{
+    font-size: 24px;
+    color:black!important;
+    display: block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.square:hover:hover {
+    background-color: mediumpurple;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.tell{
+    font-family: 'GenAR102';
+
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.jh{
+
+    border: 1px solid #888;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
+    margin-top: 50px;
+}
+.content{
+    font-family: 'GenAR102';
+}
+.container2 {
+    display: flex;
+    justify-content: space-around; /* 박스 사이에 공간을 균등하게 배치 */
+    padding: 20px; /* 컨테이너 내부 여백 */
+}
+
+/* 스타일링된 div */
+.styled-div {
+    background-color: rgba(255, 255, 255, 0.5); /* 투명한 배경 */
+    border-radius: 20%; /* 테두리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    padding: 50px; /* 내부 여백 */
+    flex: 1; /* 모든 박스가 동일한 너비를 가지도록 설정 */
+    margin: 15px; /* 박스 간격 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 추가적인 텍스트 스타일 (선택 사항) */
+.styled-div h1, .styled-div p {
+    margin: 0;
+    padding: 0;
+}
+.star{
+    color: red;
+}

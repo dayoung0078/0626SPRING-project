@@ -112,38 +112,44 @@ document.addEventListener('DOMContentLoaded', function () {
     const secondContainer = document.getElementById('secondPosterContainer');
     const bodyElement = document.querySelector('.bodyBack_Lee');
 
-    function addPosterClickEvent(posterElement, data) {
+
+    function addPosterClickEvent(posterElement, data) { 
         posterElement.addEventListener('click', function () {
-            switch (data.vlue) {
-                case 'EunSeok':
-                    window.location.href = '/leePage';
-                    break;
-                case 'SeungYeop':
-                    window.location.href = '/seungYeopPage';
-                    break;
-                case 'Elemental':
-                    window.location.href = '/Elemental';
-                    break;
-                case 'DaYoung':
-                    window.location.href = '/daYoungPage';
-                    break;
-                case 'HyoJoo':
-                    window.location.href = '/hyoJooPage';
-                    break;
-                case 'JaeHee':
-                    window.location.href = '/jaeHeePage';
-                    break;
-                case 'HaYoung':
-                    window.location.href = '/haYoungPage';
-                    break;
-                case 'MinJoo':
-                    window.location.href = '/minJooPage';
-                    break;
-                default:
-                    console.log('Unknown vlue:', data.vlue);
-            }
+            window.location.href = `/navigate?title=${encodeURIComponent(data.title)}`;
         });
     }
+    // function addPosterClickEvent(posterElement, data) {
+    //     posterElement.addEventListener('click', function () {
+    //         switch (data.vlue) {
+    //             case 'EunSeok':
+    //                 window.location.href = '/leePage';
+    //                 break;
+    //             case 'SeungYeop':
+    //                 window.location.href = '/seungYeopPage';
+    //                 break;
+    //             case 'Elemental':
+    //                 window.location.href = '/Elemental';
+    //                 break;
+    //             case 'DaYoung':
+    //                 window.location.href = '/daYoungPage';
+    //                 break;
+    //             case 'HyoJoo':
+    //                 window.location.href = '/hyoJooPage';
+    //                 break;
+    //             case 'JaeHee':
+    //                 window.location.href = '/jaeHeePage';
+    //                 break;
+    //             case 'HaYoung':
+    //                 window.location.href = '/haYoungPage';
+    //                 break;
+    //             case 'MinJoo':
+    //                 window.location.href = '/minJooPage';
+    //                 break;
+    //             default:
+    //                 console.log('Unknown vlue:', data.vlue);
+    //         }
+    //     });
+    // }
 
     // 각각의 백그라운드 이미지 저장 공간
     const backgroundImages = {
@@ -156,38 +162,12 @@ document.addEventListener('DOMContentLoaded', function () {
         MinJoo: "url('path_to_academy_background.jpg')"
     };
     // 각각의 백그라운드 이미지 저장 공간
-    // function createPosterBox(data) {
-    //     const posterBox = document.createElement('div');
-    //     posterBox.className = 'poster_Box';
-    //     posterBox.innerHTML = `
-    //     <div class="poster_Sub_Box">
-    //         <div class="Back_img_poster" style="background-image: url('${data.imageUrl}');">
-    //             <div>
-    //                 <div class="Back_img_poster_Border"></div>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <p class="detail_Text">${data.title}</p>
-    //     <div class="Data_day_Box">
-    //         <div>
-    //             <p class="font10">${data.date}</p>
-    //         </div>
-    //         <div class="Df Df_AC">
-    //             <img src="/img/comment.svg" alt="" class="W16H16">
-    //             <p class="font13">${data.views}</p>
-    //         </div>
-    //     </div>
-    // `;
-    //     addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
-    //     return posterBox;
-    // }
-
     function createPosterBox(data) {
         const posterBox = document.createElement('div');
-        posterBox.className = 'body';
+        posterBox.className = 'poster_Box';
         posterBox.innerHTML = `
-        <div class="body_img_box">
-            <div class="body_img_demon" style="Back_img_poster_Border: url('${data.imageUrl}');">
+        <div class="poster_Sub_Box">
+            <div class="Back_img_poster" style="background-image: url('${data.imageUrl}');">
                 <div>
                     <div class="Back_img_poster_Border"></div>
                 </div>
@@ -207,91 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
         addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
         return posterBox;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     function updateFirstPosterContainer(data) {
@@ -329,3 +224,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+
+
+
+//테스트 버전
+

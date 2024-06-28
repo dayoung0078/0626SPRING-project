@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--<html lang="ko" xmlns="http://www.w3.org/1999/html">-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/font.css}">
+    <link rel="stylesheet" th:href="@{/css/subPageAll.css}">
+    <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">-->
+    <link rel="stylesheet" th:href="@{/css/songcss/container.css}">
+    <link rel="stylesheet" th:href="@{/css/tell.css}">
+
+</head>
+
+<body class="bodyBack_Lee">
+<div th:replace="header/header :: header"></div>
+<section class=" section_Lee">
+    <div class="W100_Lee">
+        <div class="W100_Lee">
+
+            <div>
+                <p class="section_subTite_header_Lee "></p>
+                <h1 class=fff> 재블리의 영화한잔 (✿˵•́ᴗ•̀˵) </h1>
+            </div>
+            <div class="section_subTite_Lee">
+
+            </div>
+            <br>
+            <div class="section_Data_box_Lee Df_JB DF_AC">
+                <div class="Df_JB DF_AC W100_Lee">
+                    <div class="Df DF_AC">
+                        <img src="../../img/songimg/profile.png" alt="" class="W24H24">
+                        <p class="ml10_Color mt4_3">songsong</p>
+                        <p class="ml10_Color">2024-06-20</p>
+                    </div>
+                    <div class="Color">
+                        <a href="">돌아가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jh">
+        <p class="susub">${movie.title}</p>
+
+        <div class="header">
+
+            <div class="container">
+
+                <img class="test2" src="${jh.imageUrl}">
+
+                <div class="text">
+
+                    <div class="text">
+
+                        <h1>${jh.title}</h1>
+
+                        <p>${jh.release_date}</p>
+
+                        <p>${jh.running_time}</p>
+
+                        <p>${jh.age}</p>
+
+                        <p>${jh.people}</p>
+
+                    </div>
+
+                    <div class="test">
+
+                        <a class="square" href="${jh.youtube_link}">예고편 재생</a>
+
+                    </div>
+
+                    <p>${jh.description}</p>
+
+                </div>
+
+            </div>
+
+            <div class="container2">
+
+                <div class="styled-div">
+
+                    <h1 class="box1">순위 누적 관객수</h1>
+
+                    <p class="box 1-1">${jh.people}</p>
+
+                </div>
+
+                <div class="styled-div">
+
+                    <h1 class="box2">실관람객 평점</h1>
+
+                    <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
+
+                        <div class="star">★</div>
+
+                        <div>
+
+                            <p>${jh.audience_like}</p>
+
+                        </div>
+
+                        <div class="styled-div">
+
+                            <h1 class="box3">네티즌 평점</h1>
+
+                            <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
+
+                                <div class="star">★ </div>
+
+                                <div>
+
+                                    <p>{jh.netizen_like}</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    </div>
+</section>
+<footer>
+</footer>
+</body>
+
+</html>

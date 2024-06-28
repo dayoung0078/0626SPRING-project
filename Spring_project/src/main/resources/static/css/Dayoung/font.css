@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('../../font/Dayoung/BMJUA_ttf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMHANNA_11';
+    src: url('../../font/Dayoung/BMHANNAProOTF.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('../../font/Dayoung/BMHANNAProOTF.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMHANNAAir';
+    src: url('../../font/Dayoung/BMHANNAAir_otf.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url('../../font/Dayoung/MaruBuri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'sungsil';
+    src: url('../../font/Dayoung/nanum-sungsil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../../font/Dayoung/NanumGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumPen';
+    src: url('../../font/Dayoung/NanumPen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GenR102';
+    src: url('../../font/Dayoung/GenR102.TTF ') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

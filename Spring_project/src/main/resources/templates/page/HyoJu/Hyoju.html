@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/font.css}">
+    <link rel="stylesheet" th:href="@{/css/subPageAll.css}">
+    <link rel="stylesheet" th:href="@{/css/HyoJu/hyoju.css}">
+</head>
+
+<body class="bodyBack_Lee">
+<div th:replace="header/header :: header"></div>
+<section class=" section_Lee">
+    <div class="W100_Lee">
+        <div class="W100_Lee">
+            <div>
+                <p class="section_subTitle_header_Lee ">해외영화 소개</p>
+            </div>
+            <div class="section_subTitle_Lee">
+                <p>Ai오타쿠의 해외 영화 소개</p>
+            </div>
+            <div class="section_Data_box_Lee Df_JB DF_AC">
+                <div class="Df_JB DF_AC W100_Lee">
+                    <div class="Df DF_AC">
+                        <img th:src="@{/img/character.svg}" alt="" class="W24H24">
+                        <p class="ml10_Color mt4_3">ai오타쿠</p>
+                        <p class="ml10_Color">2024-06-27</p>
+                    </div>
+                    <div class="Color">
+                        <a href="">돌아가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 영화 소개  -->
+    <div class="movie-intro">
+        <div class="title">AI: 인공지능</div>
+        <div class="director">감독: 스티븐 스필버그</div>
+        <div class="release-date">개봉일: 2001-06-29</div>
+        <div class="description">
+            AI: 인공지능은 스티븐 스필버그 감독의 영화로, 인간의 감정을 가진 로봇 소년의 이야기를 다룹니다.
+            이 영화는 기술과 인간성, 그리고 가족의 의미에 대해 깊이 있는 메시지를 전달합니다.
+        </div>
+        <img src="../../img/Hyoju/ai.png" class="intro-image" alt="AI 영화 포스터">
+        <div class="comments-section">
+            <textarea id="comment-input" placeholder="댓글을 입력하세요..."></textarea>
+            <button class="comment-btn" onclick="postComment()">댓글 남기기</button>
+            <div id="comments-list">
+                <!-- 댓글 목록이 여기에 추가됩니다 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 영화 소개 -->
+</section>
+<footer>
+    <div class="go_sub" style="width: 100%; text-align: center;">
+        <a th:href="@{/page/subpage}">처음으로</a>
+    </div>
+</footer>
+<script src="../../js/Hyoju/hyoju.js"></script>
+</body>
+</html>
