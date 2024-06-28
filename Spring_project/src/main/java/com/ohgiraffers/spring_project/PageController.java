@@ -62,9 +62,15 @@ public class PageController {
         return "page/SeungYeop/SeungYeop";
     }
 
+<<<<<<< HEAD
     @GetMapping("/daYoungPage")
     public String daYoungPageRedirect() {
         return "page/Dayoung/MainDayoung";
+=======
+    @GetMapping("/seungYeopPage")
+    public String seungYeopPageRedirect() {
+        return "page/SeungYeop/SeungYeop";
+>>>>>>> 80da34fd7dea22bc406b8f712bc95686c848b1d7
     }
 
     @GetMapping("/hyoJooPage")
@@ -88,6 +94,7 @@ public class PageController {
     }
 
     @GetMapping("/minJooPage")
+<<<<<<< HEAD
     public String minJooPageRedirect() {
         return "page/MinJoo/MinJoo";
     }
@@ -364,3 +371,11 @@ public class PageController {
         return movieData;
     }
 }
+=======
+    public String minJooPageRedirect(){return "page/MinJoo/MinJoo";}
+
+    @GetMapping("/hyoJooPage")
+    public String hyoJooPageRedirect() {return "page/HyoJu/HyoJu";}
+
+}
+>>>>>>> 80da34fd7dea22bc406b8f712bc95686c848b1d7
