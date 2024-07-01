@@ -12,13 +12,13 @@ import java.util.Map;
 @Controller
 public class PageController {
 
-    @GetMapping("/blog/seungYeopPage{pageNumber}")
+    @GetMapping("/seungYeopPage{pageNumber}")
     public String seungYeopPageRedirect(@PathVariable int pageNumber, Model model) {
         model.addAttribute("movie", getMovieData(pageNumber));
         return "page/SeungYeop/SeungYeop";
     }
 
-    @GetMapping("blog/daYoungPage{pageNumber}")
+    @GetMapping("/daYoungPage{pageNumber}")
     public String daYoungPageRedirect(@PathVariable int pageNumber, Model model) {
         model.addAttribute("movie", getDaYoungMovieData(pageNumber));
         return "page/Dayoung/MainDayoung";

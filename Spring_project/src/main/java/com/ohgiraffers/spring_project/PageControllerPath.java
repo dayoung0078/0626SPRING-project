@@ -12,36 +12,36 @@ public class PageControllerPath {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/seungYeopPage" + pageNumber;
+                return "redirect:/seungYeopPage" + pageNumber;
             }
-            return "redirect:/blog/seungYeopPage1";
+            return "redirect:/seungYeopPage1";
         }
 
         if (title.startsWith("다영님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/daYoungPage" + pageNumber;
+                return "redirect:/daYoungPage" + pageNumber;
             }
-            return "redirect:/blog/daYoungPage1";
+            return "redirect:/daYoungPage1";
         }
 
         if (title.startsWith("효주님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/hyoJooPage" + pageNumber;
+                return "redirect:/hyoJooPage" + pageNumber;
             }
-            return "redirect:/blog/hyoJooPage1";
+            return "redirect:/hyoJooPage1";
         }
 
         if (title.startsWith("재희님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/jaeHeePage" + pageNumber;
+                return "redirect:/jaeHeePage" + pageNumber;
             }
-            return "redirect:/blog/jaeHeePage1";
+            return "redirect:/jaeHeePage1";
         }
 
         if (title.startsWith("하영님 페이지")) {

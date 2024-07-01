@@ -8,7 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 views: 272829,
                 vlue:"SeungYeop"
             },
-
+            // {
+            //     imageUrl: "/img/seungYeop/Elemental.jpg",
+            //     title: "우승엽 페이지 2",
+            //     date: "2025.06.06",
+            //     views: 303132,
+            //     vlue:"Elemental"
+            // },
             {imageUrl: "path_to_animation2.jpg", title: "우승엽 페이지 2", date: "2025.06.06", views: 303132,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation3.jpg", title: "우승엽 페이지 3", date: "2025.07.07", views: 333435,vlue:"SeungYeop"},
             {imageUrl: "path_to_animation4.jpg", title: "우승엽 페이지 4", date: "2025.08.08", views: 363738,vlue:"SeungYeop"}
@@ -112,7 +118,38 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = `/navigate?title=${encodeURIComponent(data.title)}`;
         });
     }
-
+    // function addPosterClickEvent(posterElement, data) {
+    //     posterElement.addEventListener('click', function () {
+    //         switch (data.vlue) {
+    //             case 'EunSeok':
+    //                 window.location.href = '/leePage';
+    //                 break;
+    //             case 'SeungYeop':
+    //                 window.location.href = '/seungYeopPage';
+    //                 break;
+    //             case 'Elemental':
+    //                 window.location.href = '/Elemental';
+    //                 break;
+    //             case 'DaYoung':
+    //                 window.location.href = '/daYoungPage';
+    //                 break;
+    //             case 'HyoJoo':
+    //                 window.location.href = '/hyoJooPage';
+    //                 break;
+    //             case 'JaeHee':
+    //                 window.location.href = '/jaeHeePage';
+    //                 break;
+    //             case 'HaYoung':
+    //                 window.location.href = '/haYoungPage';
+    //                 break;
+    //             case 'MinJoo':
+    //                 window.location.href = '/minJooPage';
+    //                 break;
+    //             default:
+    //                 console.log('Unknown vlue:', data.vlue);
+    //         }
+    //     });
+    // }
 
     // 각각의 백그라운드 이미지 저장 공간
     const backgroundImages = {
@@ -150,6 +187,32 @@ document.addEventListener('DOMContentLoaded', function () {
         addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
         return posterBox;
     }
+
+    // function createPosterBox(data) {
+    //     const posterBox = document.createElement('div');
+    //     posterBox.className = 'body';
+    //     posterBox.innerHTML = `
+    //     <div class="body_img_box">
+    //         <div class="body_img_demon" style="Back_img_poster_Border: url('${data.imageUrl}');">
+    //             <div>
+    //                 <div class="Back_img_poster_Border"></div>
+    //             </div>
+    //         </div>
+    //     </div>
+    //     <p class="detail_Text">${data.title}</p>
+    //     <div class="Data_day_Box">
+    //         <div>
+    //             <p class="font10">${data.date}</p>
+    //         </div>
+    //         <div class="Df Df_AC">
+    //             <img src="/img/comment.svg" alt="" class="W16H16">
+    //             <p class="font13">${data.views}</p>
+    //         </div>
+    //     </div>
+    // `;
+    //     addPosterClickEvent(posterBox, data); // 클릭 이벤트 추가
+    //     return posterBox;
+    // }
 
 
     function updateFirstPosterContainer(data) {
@@ -190,3 +253,166 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+//테스트 버전
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const movies = [
+
+        {
+
+            title: "귀멸의 칼날: 인연의 기적, 그리고 합동 강화 훈련으로",
+
+            subtitle: "영화: Demon Slayer: kimetsu No Yaiba - To the Hashira Training 2024",
+
+            imageUrl: "/img/seungYeop/demon.jpg",
+
+            genre: "애니메이션",
+
+            country: "일본",
+
+            duration: "103분",
+
+            releaseDate: "2024.02.14",
+
+            rating: "7.70",
+
+            audience: "49만명",
+
+            originalLink: "https://search.shopping.naver.com/book/search?bookTabType=ALL&frm=NVSHSRC&pageIndex=1&pageSize=40&query=%EA%B3%A0%ED%86%A0%EA%B2%8C%20%EC%BD%94%EC%9A%94%ED%95%98%EB%A3%A8%20%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0&sort=REL",
+
+            description: "'탄지로'와 상현 4'한텐구'의 목숨을 건 혈투와 '무잔'과의 최종 국면을 앞둔 귀살대원들의 마지막 훈련을 그린 영화!!"
+
+        }
+        ,{
+        
+            title: "다른 영화 제목",
+        
+            subtitle: "영화: Another Movie Subtitle",
+        
+            imageUrl: "/img/seungYeop/another_movie.jpg",
+        
+            genre: "드라마",
+        
+            country: "한국",
+        
+            duration: "120분",
+        
+            releaseDate: "2023.12.25",
+        
+            rating: "8.50",
+        
+            audience: "100만명",
+        
+            originalLink: "https://example.com/another_movie",
+        
+            description: "이 영화는 감동적인 이야기를 담고 있습니다."
+        
+        }
+
+    ];
+
+
+
+    let movieHtml = '';
+
+    movies.forEach(movie => {
+
+        movieHtml += `
+
+                <div class="movie_div">
+
+                    <div class="header">
+
+                        <div class="header_border">
+
+                            <div class="header_demon01">
+
+                                <p>${movie.title}</p>
+
+                            </div>
+
+                            <div class="header_demon02">
+
+                                <p>${movie.subtitle}</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="body">
+
+                        <div class="body_img_box">
+
+                            <img class="body_img_demon" src="${movie.imageUrl}">
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+
+                        <div class="footer_summary">
+
+                            <div class="footer_summary02">
+
+                                <p>개요</p>
+
+                                <p>${movie.genre}</p>
+
+                                <p>${movie.country}</p>
+
+                                <p>${movie.duration}</p>
+
+                            </div>
+
+                            <div class="footer_summary03">
+
+                                <p>개봉</p>
+
+                                <p>${movie.releaseDate}</p>
+
+                            </div>
+
+                            <div class="footer_summary04">
+
+                                <p>평점</p>
+
+                                <p class="pentagram"></p>
+
+                                <p>${movie.rating}</p>
+
+                            </div>
+
+                            <div class="footer_summary05">
+
+                                <p>관객</p>
+
+                                <p>${movie.audience}</p>
+
+                            </div>
+
+                            <div class="footer_summary06">
+
+                                <p>원작</p>
+
+                                <a href="${movie.originalLink}" style="color: blue;">만화</a>
+
+                            </div>
+
+                            <p>${movie.description}</p>
+
+                        </div>
+
+                    </div>
+
+                </div>`;
+
+    });
+
+    document.querySelector('.movie').innerHTML = movieHtml;
+
+});
