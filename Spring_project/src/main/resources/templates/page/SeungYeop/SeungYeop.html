@@ -28,7 +28,7 @@
             <div class="section_Data_box_Lee Df_JB DF_AC">
                 <div class="Df_JB DF_AC W100_Lee">
                     <div class="Df DF_AC">
-                        <img th:src="@{/img/seungYeop/penguin.png}" alt="" class="W24H24">
+                        <img th:src="@{/img/SeungYeop/penguin.png}" alt="" class="W24H24">
                         <p class="ml10_Color mt4_3">애니오타쿠</p>
                         <p class="ml10_Color">2024-06-20</p>
                     </div>
@@ -48,50 +48,50 @@
             <div class="header">
                 <div class="header_border">
                     <div class="header_demon01">
-                        <p th:text="${movie.title}"></p>
+                        <p th:text="${title}"></p>
                     </div>
                     <div class="header_demon02">
-                        <p th:text="${movie.subtitle}"></p>
+                        <p th:text="${subtitle}"></p>
                     </div>
                 </div>
             </div>
             <div class="body">
                 <div class="body_img_box">
-                    <img class="body_img_demon" th:src="${movie.imageUrl}">
+                    <img class="body_img_demon" th:src="${imageUrl}">
                 </div>
             </div>
             <div class="footer">
                 <div class="footer_summary">
                     <div class="footer_summary02">
                         <p>개요</p>
-                        <p th:text="${movie.genre}"></p>
-                        <p th:text="${movie.country}"></p>
-                        <p th:text="${movie.duration}"></p>
+                        <p th:text="${genre}"></p>
+                        <p th:text="${country}"></p>
+                        <p th:text="${duration}"></p>
                     </div>
                     <div class="footer_summary03">
                         <p>개봉</p>
-                        <p th:text="${movie.releaseDate}"></p>
+                        <p th:text="${releaseDate}"></p>
                     </div>
                     <div class="footer_summary04">
                         <p>평점</p>
                         <p class="pentagram"></p>
-                        <p th:text="${movie.rating}"></p>
+                        <p th:text="${rating}"></p>
                     </div>
                     <div class="footer_summary05">
                         <p>관객</p>
-                        <p th:text="${movie.audience}"></p>
+                        <p th:text="${audience}"></p>
                     </div>
                     <div class="footer_summary06">
                         <p>원작</p>
-                        <a th:href="${movie.originalLink}" style="color: blue;">만화</a>
+                        <a th:href="${originalLink}" style="color: blue;">만화</a>
                     </div>
-                    <p th:text="${movie.description}"></p>
+                    <p th:text="${description}"></p>
                     <div id="Accordion_wrap">
                         <div class="que">
-                            <span th:text="${movie.AccordionTitle}"> </span>
+                            <span th:text="${AccordionTitle}"> </span>
                         </div>
                         <div class="anw">
-                            <pre th:text="${movie.anw}"></pre>
+                            <pre th:text="${anw}"></pre>
                         </div>
                 </div>
             </div>
