@@ -13,14 +13,17 @@
 
 <body class="bodyBack_Lee">
 <div th:replace="header/header :: header"></div>
-<section class="section_Lee">
+<section class=" section_Lee">
     <div class="W100_Lee">
         <div class="W100_Lee">
+
             <div>
                 <p class="section_subTite_header_Lee "></p>
-                <h1 class="fff"> 재블리의 영화한잔 (✿˵•́ᴗ•̀˵) </h1>
+                <h1 class=fff> 재블리의 영화한잔 (✿˵•́ᴗ•̀˵) </h1>
             </div>
-            <div class="section_subTite_Lee"></div>
+            <div class="section_subTite_Lee">
+
+            </div>
             <br>
             <div class="section_Data_box_Lee Df_JB DF_AC">
                 <div class="Df_JB DF_AC W100_Lee">
@@ -37,59 +40,73 @@
         </div>
     </div>
 
+
     <div class="jh">
-        <p class="susub" align="center" th:text="${movie.title}"></p>
+        <p class="susub" align="center">영화 "하이재킹"의 역사적 배경: 1971년 대한항공 납북사건</p>
+        <div class="container">
+            <img class="test2" src="../../img/songimg/hija.png" alt="hijaking">
 
-        <div class="header">
-            <div class="container">
-                <img class="test2" th:src="${movie.imageUrl}">
-
-                <div class="text">
-                    <div class="padd">
-                    <h1 th:text="${movie.sub_title}"></h1>
-                    <p th:text="${movie.release_date}"></p>
-                    <p th:text="${movie.running_time}"></p>
-                    <p th:text="${movie.age}"></p>
-                    <p th:text="${movie.people}"></p>
+            <div class="text">
+                <div class="padd">
+                    <h1>하이재킹</h1>
+                    <p>2024.06.21 개봉 </p>
+                    <p> 100분 </p>
+                    <p> 12세이상관람가 </p>
+                    <p> 49.3만명 </p>
                 </div>
-
                 <div class="test">
-                    <a class="square" th:href="${movie.youtube_link}">예고편 재생</a>
+                    <a class="square" href="https://www.youtube.com/watch?v=9br0nh4mGI4">예고편 재생</a>
+
                 </div>
 
-                <p th:text="${movie.description}"></p>
+                <p>1971년 겨울 속초공항여객기 조종사 태인(하정우)과 규식(성동일)은 </p>
+                <p>김포행 비행에 나선다. 승무원 옥순(채수빈)의 안내에 따라 </p>
+                <p>탑승 중인 승객들의 분주함도 잠시, 이륙한지 얼마 되지 않아 </p>
+                <p>사제폭탄이 터지며 기내는 아수라장이 된다.</p>
             </div>
         </div>
-            <div class="container2">
-                <div class="styled-div">
-                    <h1 class="box1">순위 누적 관객수</h1>
-                    <p class="box 1-1" th:text="${movie.people}"></p>
-                </div>
 
-                <div class="styled-div">
-                    <h1 class="box2">실관람객 평점</h1>
-                    <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
-                        <div class="star">★</div>
-                        <div>
-                            <p th:text="${movie.audience_like}"></p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="styled-div">
-                    <h1 class="box3">네티즌 평점</h1>
-                    <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
-                        <div class="star">★</div>
-                        <div>
-                            <p th:text="${movie.netizen_like}"></p>
-                        </div>
+        <div class="container2">
+            <div class="styled-div">
+                <h1 class="box1">순위 누적 관객수</h1>
+                <p class="box 1-1">3위/70만명</p>
+            </div>
+            <div class="styled-div">
+                <h1 class="box2">실관람객 평점</h1>
+                <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
+                    <div class="star">★ </div>
+                    <div>
+                        <p>8.15</p>
                     </div>
+
+                </div>
+            </div>
+            <div class="styled-div">
+                <h1 class="box3">네티즌 평점</h1>
+                <div style="display: flex;align-items: center;justify-content: center; width: 100%;">
+                    <div class="star">★ </div>
+                    <div>
+                        <p>8.75</p>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <!--    <div class="content1">-->
+        <!--      <p>전반적으로 재미도 괜찮았고 배우들 연기도 좋고 상황에 대한 공감도 잘되었는데 비행기 하이재킹 이야기치고는  </p>-->
+        <!--      <p>너무 무난하게 진행되었던게 아닌가하는 생각도 들었습니다. 허구의 영화라면 생각지못한 기상천외한 방법들이 </p>-->
+        <!--      <p>동원되었겠지만 실화를 바탕으로했기에 극적 재미에 대해서는 어느정도 한계에 부딪힐수밖에 없으므로 실화 기</p>-->
+        <!--      <p>반에 이정도 스릴감있는 진행이면 그런대로 괜찮았다고 봅니다. 비행기 올라타자마자 바로 납치상황이 벌어지기 </p>-->
+        <!--      <p>때문에 긴장감이 바로 올라오고 크게 늘어지는거 없이 후반부까지 몰입감이 좋아서 전반적으로 재미있게 봤습니다.</p>-->
+        <!--    </div>-->
+
     </div>
 </section>
-<footer></footer>
+<footer>
+</footer>
 </body>
+
 
 </html>

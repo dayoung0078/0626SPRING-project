@@ -17,6 +17,40 @@ public class PageController {
         return "page/SeungYeop/SeungYeop";
     }
 
+    // 에러
+    @GetMapping("/daYoungPage")
+    public String DayoungPage() {
+        return "page/Dayoung/Dayoung";
+    }
+    // 에러
+
+    @GetMapping("/hyoJooPage")
+    public String hyoJooPage() {
+        return "page/HyoJu/HyoJu";
+    }
+
+    // 에러
+    @GetMapping("/jaeHeePage")
+    public String jaeHeePage() {
+        return "page/jaeHeePage/jaeHeePage";
+    }
+    // 에러
+
+
+    @GetMapping("/haYoungPage")
+    public String haYoungPage() {
+        return "page/haYoungPage/haYoungPage";
+    }
+
+    @GetMapping("/eunSeokPage")
+    public String eunSeokPage() {
+        return "page/Lee/Lee";
+    }
+
+    @GetMapping("/MinJooPage")
+    public String MinJooPage() {
+        return "page/MinJoo/MinJoo";
+    }
 
 
 //
