@@ -7,69 +7,70 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class PageControllerPath {
     @GetMapping("/navigate")
-    public String navigate(@RequestParam String title)     {
+    public String navigate(@RequestParam String title) {
         if (title.startsWith("우승엽 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/seungYeopPage" + pageNumber;
+                return "redirect:/seungYeopPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/seungYeopPage1";
+            return "redirect:/seungYeopPage?pageNumber=1";
         }
 
         if (title.startsWith("다영님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/daYoungPage" + pageNumber;
+                return "redirect:/daYoungPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/daYoungPage1";
+            return "redirect:/daYoungPage?pageNumber=1";
         }
 
         if (title.startsWith("효주님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/hyoJooPage" + pageNumber;
+                return "redirect:/hyoJooPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/hyoJooPage1";
+            return "redirect:/hyoJooPage?pageNumber=1";
         }
 
         if (title.startsWith("재희님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/jaeHeePage" + pageNumber;
+                return "redirect:/jaeHeePage?pageNumber=" + pageNumber;
             }
-            return "redirect:/jaeHeePage1";
+            return "redirect:/jaeHeePage?pageNumber=1";
         }
 
         if (title.startsWith("하영님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/haYoungPage" + pageNumber;
+                return "redirect:/haYoungPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/blog/haYoungPage1";
+            return "redirect:/haYoungPage?pageNumber=1";
         }
 
         if (title.startsWith("은석 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/eunSeokPage" + pageNumber;
+                return "redirect:/eunSeokPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/blog/eunSeokPage1";
+            return "redirect:/eunSeokPage?pageNumber=1";
         }
 
         if (title.startsWith("민주님 페이지")) {
             String[] parts = title.split(" ");
             if (parts.length == 3) {
                 String pageNumber = parts[2];
-                return "redirect:/blog/minJooPage" + pageNumber;
+                return "redirect:/minJooPage?pageNumber=" + pageNumber;
             }
-            return "redirect:/blog/minJooPage1";
+            return "redirect:/minJooPage?pageNumber=1";
         }
+
         return "redirect:/";
     }
 }

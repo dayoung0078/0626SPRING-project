@@ -4,7 +4,7 @@ package com.ohgiraffers.spring_project;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,43 +13,43 @@ import java.util.Map;
 public class PageController {
 
     @GetMapping("/seungYeopPage{pageNumber}")
-    public String seungYeopPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String seungYeopPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getMovieData(pageNumber));
         return "page/SeungYeop/SeungYeop";
     }
 
     @GetMapping("/daYoungPage{pageNumber}")
-    public String daYoungPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String daYoungPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getDaYoungMovieData(pageNumber));
         return "page/Dayoung/MainDayoung";
     }
 
     @GetMapping("/hyoJooPage{pageNumber}")
-    public String hyoJooPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String hyoJooPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getHyoJooMovieData(pageNumber));
         return "page/HyoJu/HyoJu";
     }
 
     @GetMapping("/jaeHeePage{pageNumber}")
-    public String jaeHeePageRedirect(@PathVariable int pageNumber, Model model) {
+    public String jaeHeePageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getJaeHeeMovieData(pageNumber));
         return "page/jaeHeePage/jaeHeePage";
     }
 
     @GetMapping("/haYoungPage{pageNumber}")
-    public String haYoungPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String haYoungPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getHaYoungMovieData(pageNumber));
         return "page/HaYoung/HaYoung";
     }
 
     @GetMapping("/eunSeokPage{pageNumber}")
-    public String eunSeokPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String eunSeokPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getEunSeokMovieData(pageNumber));
         return "page/Lee/Lee";
     }
 
     @GetMapping("/minJooPage{pageNumber}")
-    public String minJooPageRedirect(@PathVariable int pageNumber, Model model) {
+    public String minJooPageRedirect(@RequestParam int pageNumber, Model model) {
         model.addAttribute("movie", getMinJooMovieData(pageNumber));
         return "page/MinJoo/MinJoo";
     }
