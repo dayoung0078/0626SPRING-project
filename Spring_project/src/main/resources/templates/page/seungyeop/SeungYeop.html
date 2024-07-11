@@ -15,85 +15,76 @@
 
 <body class="bodyBack_Lee">
 <div th:replace="header/header :: header"></div>
-<section class="section_Lee">
-    <div class="W100_Lee">
-        <div class="W100_Lee">
-            <div>
-                <p class="section_subTitle_header_Lee">애니메이션 리뷰</p>
-            </div>
-            <div class="section_subTitle_Lee">
-                <p>애니 오타쿠의 영화공유 & 리뷰</p>
-            </div>
-            <div class="section_Data_box_Lee Df_JB DF_AC">
-                <div class="Df_JB DF_AC W100_Lee">
-                    <div class="Df DF_AC">
-                        <img th:src="@{/img/SeungYeop/penguin.png}" alt="" class="W24H24">
-                        <p class="ml10_Color mt4_3">애니오타쿠</p>
-                        <p class="ml10_Color">2024-06-20</p>
-                    </div>
-                    <div class="Color">
-                        <a href="">돌아가기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 귀멸이 칼날 -->
-    <div class="movie" th:if="${moviePage.hasContent()}" th:each="movie : ${moviePage.content}">
+<div class="section_Lee">
+    <form action="SeungYeop" method="post">
+    <div class="movie">
         <div class="movie_div">
+
             <div class="header">
                 <div class="header_border">
                     <div class="header_demon01">
-                        <p th:text="${movie.title}"></p>
+                        <p> 귀멸의 칼날: 인연의 기적, 그리고 합동 강화 훈련으로 </p>
                     </div>
                     <div class="header_demon02">
-                        <p th:text="${movie.subtitle}"></p>
+                        <p> 영화: Demon Slayer: kimetsu No Yaiba - To the Hashira Training 2024</p>
                     </div>
                 </div>
             </div>
+
             <div class="body">
                 <div class="body_img_box">
-                    <img class="body_img_demon" th:src="${movie.image_url}">
+                    <img class="body_img_demon" src="../../img/damon.jpg">
                 </div>
             </div>
+
             <div class="footer">
                 <div class="footer_summary">
                     <div class="footer_summary02">
-                        <p>개요</p>
-                        <p th:text="${movie.genre}"></p>
-                        <p th:text="${movie.country}"></p>
-                        <p th:text="${movie.duration}"></p>
+                        <p> 개요 </p>
+                        <p> 애니메이션 </p>
+                        <p> 일본 </p>
+                        <p> 103분 </p>
                     </div>
+
                     <div class="footer_summary03">
-                        <p>개봉</p>
-                        <p th:text="${movie.releaseDate}"></p>
+                        <p> 개봉 </p>
+                        <p> 2024.02.14 </p>
                     </div>
                     <div class="footer_summary04">
-                        <p>평점</p>
+                        <p> 평점 </p>
                         <p class="pentagram"></p>
-                        <p th:text="${movie.rating}"></p>
+                        <p>7.70</p>
                     </div>
                     <div class="footer_summary05">
-                        <p>관객</p>
-                        <p th:text="${movie.audience}"></p>
+                        <p> 관객 </p>
+                        <p> 49만명 </p>
                     </div>
                     <div class="footer_summary06">
-                        <p>원작</p>
+                        <p> 원작 </p>
+                        <a style="color: blue;" href="https://search.shopping.naver.com/book/search?bookTabType=ALL&fr
+                        m=NVSHSRC&pageIndex=1&pageSize=40&query=%EA%B3%A0%ED%86%A0%EA%B2%8C%20%EC%BD%94%EC%9A%94%ED%95%98
+                        %EB%A3%A8%20%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0&sort=REL"> 만화 </a>
                     </div>
-                    <p th:if="${movie.description != null}" th:text="${movie.description}"></p>
+                    <p> '탄지로'와 상현 4'한텐구'의 목숨을 건 혈투와
+                        '무잔'과의 최종 국면을 앞둔 귀살대원들의 마지막 훈련을 그린 영화!!
+                    </p>
+                    <div id="Accordion_wrap">
+                        <div class="que">
+                            <span>귀멸의 칼날: 인연의 기적, 그리고 합동 강화 훈련으로 </span>
+                            <div class="arrow-wrap">
+                            </div>
+                        </div>
+                        <div class="anw">
+                            <a th:href="@{/test}" role="button">글쓰기</a>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <div th:if="${moviePage.hasPrevious()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number - 1})}">이전</a>
-    </div>
-    <div th:if="${moviePage.hasNext()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number - 1})}">이전</a>
-    </div>
-    <div th:if="${moviePage.hasNext()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number + 1})}">다음</a>
-    </div>
-</section>
+    </form>
+</div>
 </body>
 </html>

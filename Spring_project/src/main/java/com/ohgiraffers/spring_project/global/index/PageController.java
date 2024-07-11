@@ -1,7 +1,8 @@
 package com.ohgiraffers.spring_project.global.index;
 
 
-import com.ohgiraffers.spring_project.sy.service.MovieService;
+import com.ohgiraffers.spring_project.sy.model.entity.SyEntity;
+import com.ohgiraffers.spring_project.sy.service.SyService;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class PageController {
 
 
-    private final MovieService movieService;
+    private final SyService syService;
 
-    public PageController(MovieService movieService) {
-        this.movieService = movieService;
+    public PageController(SyService syService) {
+        this.syService = syService;
     }
 
     @GetMapping("/seungYeopPage")
     public String SeungYeop(@RequestParam(defaultValue = "1") int pageNumber, Model model) {
         int pageSize = 1; // 한 페이지에 하나의 영화만 표시
-        Page<MovieEntity> moviePage = movieService.getMoviesByPage(pageNumber, pageSize);
+        Page<SyEntity> moviePage = syService.getMoviesByPage(pageNumber, pageSize);
         model.addAttribute("moviePage", moviePage);
         return "page/SeungYeop/SeungYeop";
     }
