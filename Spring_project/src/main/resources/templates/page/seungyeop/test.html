@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/font.css}">
+    <link rel="stylesheet" th:href="@{/css/subPageAll.css}">
+    <link rel="stylesheet" th:href="@{/css/SeungYeop/seungyeop.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script th:src="@{/js/seungyeop/SeungYeop.js}"></script>
+</head>
+
+<body class="bodyBack_Lee">
+<div th:replace="header/header :: header"></div>
+<form action="/test" method="post">
+<div class="movie">
+    <div class="movie_div">
+
+        <div class="header">
+            <div class="header_border">
+                <div class="header_demon01">
+                    <p> 귀멸의 칼날: 인연의 기적, 그리고 합동 강화 훈련으로 </p>
+                </div>
+                <div class="header_demon02">
+                    <p> 영화: Demon Slayer: kimetsu No Yaiba - To the Hashira Training 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="body_img_box">
+                <img class="body_img_demon" src="../../img/damon.jpg">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_summary">
+                <div class="footer_summary02">
+                    <p> 개요 </p>
+                    <p> 애니메이션 </p>
+                    <p> 일본 </p>
+                    <p> 103분 </p>
+                </div>
+
+                <div class="footer_summary03">
+                    <p> 개봉 </p>
+                    <p> 2024.02.14 </p>
+                </div>
+                <div class="footer_summary04">
+                    <p> 평점 </p>
+                    <p class="pentagram"></p>
+                    <p>7.70</p>
+                </div>
+                <div class="footer_summary05">
+                    <p> 관객 </p>
+                    <p> 49만명 </p>
+                </div>
+                <div class="footer_summary06">
+                    <p> 원작 </p>
+                    <a style="color: blue;" href="https://search.shopping.naver.com/book/search?bookTabType=ALL&fr
+                        m=NVSHSRC&pageIndex=1&pageSize=40&query=%EA%B3%A0%ED%86%A0%EA%B2%8C%20%EC%BD%94%EC%9A%94%ED%95%98
+                        %EB%A3%A8%20%EA%B7%80%EB%A9%B8%EC%9D%98%20%EC%B9%BC%EB%82%A0&sort=REL"> 만화 </a>
+                </div>
+                <p> '탄지로'와 상현 4'한텐구'의 목숨을 건 혈투와
+                    '무잔'과의 최종 국면을 앞둔 귀살대원들의 마지막 훈련을 그린 영화!!
+                </p>
+                <div id="Accordion_wrap">
+                    <div class="que">
+                        <span>귀멸의 칼날: 인연의 기적, 그리고 합동 강화 훈련으로 </span>
+                        <div class="arrow-wrap">
+                        </div>
+                    </div>
+                    <div class="anw">
+                        <label>내용</label>
+                        <textarea type="text" name="content" id="inputContent"></textarea>
+                        <a th:href="@{/seungYeopPage}" role="button">등록하기</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</form>
+</body>
+</html>
