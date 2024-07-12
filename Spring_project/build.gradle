@@ -27,10 +27,13 @@ dependencies {
     implementation 'org.projectlombok:lombok'
 
 
+<<<<<<< HEAD
 //    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 //    implementation 'org.springframework.boot:spring-boot-starter-security'
 //    testImplementation 'org.springframework.security:spring-security-test'
 
+=======
+>>>>>>> 435a3cfd9aeaf54e0c7a13c109bdf3c426adce29
 
 }
 
