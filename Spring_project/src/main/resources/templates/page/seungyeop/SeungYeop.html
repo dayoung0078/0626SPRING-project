@@ -85,15 +85,6 @@
             </div>
         </div>
     </div>
-    <div th:if="${moviePage.hasPrevious()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number - 1})}">이전</a>
-    </div>
-    <div th:if="${moviePage.hasNext()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number - 1})}">이전</a>
-    </div>
-    <div th:if="${moviePage.hasNext()}">
-        <a th:href="@{/seungYeopPage(pageNumber=${moviePage.number + 1})}">다음</a>
-    </div>
 </section>
 </body>
 </html>
