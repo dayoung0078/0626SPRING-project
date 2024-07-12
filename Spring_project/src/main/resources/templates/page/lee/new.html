@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 게임 추가</title>
+</head>
+<body>
+<h1>새 게임 추가</h1>
+<form th:action="@{/eunseok/game/new}" th:object="${game}" method="post" enctype="multipart/form-data">
+    <label for="estitle">제목:</label>
+    <input type="text" id="estitle" th:field="*{estitle}" /><br/>
+    <label for="essubtitle">부제목:</label>
+    <input type="text" id="essubtitle" th:field="*{essubtitle}" /><br/>
+    <label for="esimagefile">이미지 파일:</label>
+    <input type="file" id="esimagefile" name="imageFile" /><br/>
+    <label for="esgenre">장르:</label>
+    <input type="text" id="esgenre" th:field="*{esgenre}" /><br/>
+    <label for="escountry">국가:</label>
+    <input type="text" id="escountry" th:field="*{escountry}" /><br/>
+    <label for="esduration">기간:</label>
+    <input type="text" id="esduration" th:field="*{esduration}" /><br/>
+    <label for="esissue">발행일:</label>
+    <input type="text" id="esissue" th:field="*{esissue}" /><br/>
+    <label for="esmetacritic">메타크리틱:</label>
+    <input type="text" id="esmetacritic" th:field="*{esmetacritic}" /><br/>
+    <label for="esaccessor">접속자:</label>
+    <input type="text" id="esaccessor" th:field="*{esaccessor}" /><br/>
+    <button type="submit">저장</button>
+</form>
+</body>
+</html>
